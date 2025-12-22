@@ -1,0 +1,94 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Data and Vector DB
+observe_ai/data/vector_db/*
+observe_ai/data/vector_db/chroma.sqlite3
+observe_ai/data/*.zip
+observe_ai/bert_classifier
+observe_ai/causality
+observe_ai/dumps
+
+# json files
+observe_ai/data/*.json
+observe_ai/data/transcripts/*.json
+taxonomy.json
+transcripts_filtered.json
+transcripts.json
+labeled_transcripts_for_graph_allminiLML6.json
+labeled_transcripts_for_graph_emb_gemma.json
+labeled_transcripts_for_graph_emb_jina.json
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# OS
+.DS_Store
+Thumbs.db
+.env.example.local
+
+# Node (if using any frontend)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# Pytest cache
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
