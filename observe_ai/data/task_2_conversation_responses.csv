@@ -1,0 +1,56 @@
+query_id,query,response_text,error,full_response_json
+Q00000,"In calls where agents mention a loyalty program and immediately follow up with a discount or reward, how frequently do customers use hesitation words ('um', 'uh') compared to other calls?","**1. Executive Summary**
+Based on an analysis of 38 distinct call segments, the pattern of an agent mentioning a loyalty program and immediately following with a discount or reward is a complex conversational trigger. It does not directly cause a simple increase in hesitation words ('um', 'uh'). Instead, it frequently initiates a customer evaluation process, where hesitation manifests as a signal of underlying cognitive states: evaluating trade-offs, expressing skepticism about the value, or seeking clarification on program legitimacy. The causal analysis metrics (specifically, `disfluency_count` and related conversational flow measures) indicate that this agent behavior is a pivotal moment that shapes the emotional and cognitive trajectory of the call.
+
+**2. Key Causal Patterns**
+
+*   **Pattern A: The ""Immediate Offer"" Triggers a Value Assessment, Not Hesitation**
+    *   *Evidence:* In numerous cases, the customer's response is not mere filler hesitation but a direct question or statement challenging the offer's substance. For example, in **Case 17 (ID: 1c9e7ca0)**, after the agent ties loyalty to discounts, the customer asks, ""okay but um if i'm not getting the discounts what's the incentive to stay loyal?"" Similarly, in **Case 32 (ID: 5abf4b69)**, the customer concludes, ""there's no real value in staying loyal when the discounts um are not there."" The hesitation here (""um"") punctuates a rational critique, not speech disfluency due to confusion.
+    *   *Effect:* This pattern shifts the conversation from a simple transactional offer to a negotiation or justification dialogue. The causal metrics show associated shifts in emotional tones (like `emo_confusion_mean` and `sentiment_change`) around these exchanges, indicating the intervention (mention + offer) successfully alters the conversational dynamic, often towards a more skeptical or analytical customer stance.
+
+*   **Pattern B: Hesitation Signals Processing Complex or Contradictory Information**
+    *   *Evidence:* When the loyalty mention and subsequent offer contain internal contradictions or complex terms, customer hesitation indicates cognitive load. In **Case 24 (ID: 413599ef)**, the agent explains a loyalty discount that ""might not cover the uh high deductible issue."" The customer responds, ""that's um frustrating..."", with hesitation expressing the difficulty of reconciling the offer with their need. In **Case 7 (ID: 6ea8ea0f)**, the agent states promotions ""complicate um choices instead of simplifying them,"" and the customer hesitates (""um you know"") while grappling with this admitted complexity.
+    *   *Effect:* The agent's framing directly introduces complexity. The observed stable but significant levels of conversational disfluency metrics (`disfluency_count`) in these segments correlate with these moments of agent-introduced contradiction, suggesting the intervention causes the customer to pause and process conflicting information.
+
+*   **Pattern C: ""Hesitation"" as a Polite Prelude to Dissatisfaction or Disengagement**
+    *   *Evidence:* Frequently, a hesitation word softens a subsequent statement of dissatisfaction or a decision to disengage. In **Case 36 (ID: 98fd3650)**, after discount details are clarified, the customer says, ""okay i guess um i'll stick with my current plan then."" The ""um"" precedes a non-committal or negative decision. In **Case 25 (ID: ff1d70d1)**, the customer uses hesitation (""hm didn't really help at all huh like uh what's the point then"") to couch blunt criticism of the loyalty benefit's utility.
+    *   *Effect:* This pattern shows that what is quantified as ""hesitation"" in the causal model is often a discourse marker for politeness or face-saving before delivering negative feedback or rejecting the offer. The intervention prompts a customer response that is negatively valenced, as reflected in the sentiment change metrics adjacent to these exchanges.
+
+**3. Counterfactual Recommendation**
+
+*   *Observation:* We observed that when agents use the ""loyalty mention + immediate offer"" sequence in a generic, scripted, or contradictory manner, it frequently triggers customer responses characterized by value assessment, skepticism, and polite pushback—behaviors that include hesitation markers. The causal data indicates this intervention reliably alters the emotional and engagement trajectory of the call.
+*   *Hypothesis:* If agents were trained to **decouple the loyalty acknowledgment from the immediate offer** and instead use the loyalty mention as a pivot to a diagnostic question, we would expect a reduction in value-based skepticism and its associated hesitation markers. For example, following a loyalty acknowledgment (""I see you're a valued Gold member""), the agent could ask, ""What's most important to you when considering an offer like this?"" This counterfactual approach, testable via an A/B trial, hypothesizes that by having the customer articulate their criteria first, any subsequent offer would be perceived as more tailored and legitimate, reducing the cognitive load and defensive skepticism that manifest as hesitation in the current pattern.
+
+**4. Citations**
+*   Case 7: ID 6ea8ea0f-d695-40a3-98e3-c644ffe46743
+*   Case 17: ID 1c9e7ca0-8a8c-41ee-9654-4a2b620c4b90
+*   Case 24: ID 413599ef-fce2-4857-9a74-2144ec1363ad
+*   Case 25: ID ff1d70d1-e372-4671-a35e-869911558a3a
+*   Case 32: ID 5abf4b69-f45f-44e4-bdfa-6d6039e88ba1
+*   Case 36: ID 98fd3650-86b0-43e4-8f91-7bb52774a7fd",,
+Q00000,The pattern you identified where customers use such words - why does this lead to increased engagement or customer confusion?,"**1. Executive Summary**
+Based on a synthesis of 34 distinct conversation segments, the pattern where customers use words indicative of lexical diversity (e.g., varied phrasing, complex terms, or jargon) leads to increased engagement *or* customer confusion through a dual-path causal mechanism. The primary driver is the customer's cognitive load and need for clarity. When customers introduce or engage with diverse vocabulary, it signals a deeper attempt to understand complex topics (increasing engagement), but simultaneously overloads the communication channel, creating ambiguity that directly causes confusion and lowers satisfaction. The outcome depends on whether the agent successfully matches this linguistic complexity with clear, consistent explanations.
+
+**2. Key Causal Patterns**
+*   **Pattern A: Customer-Initiated Lexical Diversity as a Signal of Deep Engagement**
+    *   *Evidence:* In several cases, customers themselves introduce or probe the concept of ""lexical diversity,"" ""varied phrasing,"" or ""jargon,"" demonstrating an active attempt to understand the service or policy nuances. For example, in Case 1 (ID: 74fc1675...), the customer asks, ""does um offering anything help with customer satisfaction,"" leading to a detailed exchange about lexical diversity. In Case 13 (ID: d6d1f871...), the customer notes, ""i did notice um a little more engagement when the agent used different phrases.""
+    *   *Effect:* This pattern initiates longer, more substantive conversations. The causal analysis data supports this, showing cases with these discussions have higher counts of customer turns and total words, indicating prolonged interaction. The act of using or questioning complex terminology is itself an engagement behavior, as it moves the conversation beyond simple transactional queries.
+
+*   **Pattern B: Lexical Diversity Creates Ambiguity, Leading Directly to Customer-Confusion**
+    *   *Evidence:* Overwhelmingly, when the conversation centers on varied language—whether introduced by the agent or the customer—the outcome is explicitly stated confusion and dissatisfaction. Customers directly attribute their confusion to ""varied phrasing"" (Case 6, ID: 63a5f98a...: ""the varied phrasing made it hard to follow"") and ""lexical diversity"" (Case 20, ID: 63a5f98a...: ""more um lexical diversity led to my confusion""). Agents corroborate this, stating ""varied phrasing has uh actually worsened upsell outcomes"" (Case 7, ID: eb160818...) and that higher lexical diversity ""can correlate with lower satisfaction because of the confusion"" (Case 5, ID: 526099c4...).
+    *   *Effect:* This confusion has a tangible negative impact. The causal analysis, while showing descriptive (non-changing) states for these specific segments, quantifies the presence of confusion (`emo_confusion` metrics) and lower approval (`emo_approval` metrics) in these very conversations. The narrative data consistently links the linguistic pattern to worsened outcomes like lower satisfaction, failed upsells, and customer frustration.
+
+*   **Pattern C: The Critical Role of Agent Response in Determining the Ultimate Outcome**
+    *   *Evidence:* The path from engagement to either positive resolution or entrenched confusion is determined by the agent's follow-up. Successful cases show agents pivoting to simplicity after recognizing the customer's struggle (e.g., Case 18, ID: 94cb4a69...: ""sticking with simple phrases is better""). Unsuccessful cases show agents either persisting with complex explanations or failing to provide clear, consistent definitions, thereby amplifying the initial confusion signaled by the customer's word choice.
+    *   *Effect:* When agents provide clarity and consistency, they can harness the customer's engagement for a positive resolution. When they do not, the engagement devolves into frustration. This is evident in the sentiment change metrics, where some conversations end on a more positive note (positive `sentiment_change`) after clarification, while others remain neutral or negative.
+
+**3. Counterfactual Recommendation**
+*   *Observation:* We observed that when customers use or inquire about linguistically diverse terms, it presents a critical junction. If agents respond with equally varied or inconsistent language, it reliably leads to customer confusion and dissatisfaction.
+*   *Hypothesis:* If agents were trained to recognize customer inquiries about ""lexical diversity,"" ""jargon,"" or ""varied phrasing"" as a signal for the need for *clarity* rather than a cue for *complexity*, we expect a significant reduction in confusion-driven dissatisfaction. The counterfactual model suggests that intercepting this pattern with standardized, simple explanations would convert high-engagement moments into high-satisfaction outcomes, positively impacting key metrics like `emo_approval` and reducing the peak levels of `emo_confusion` observed in the data.
+
+**4. Citations**
+*   Case 1, 5, 29: ID 74fc1675-76cf-41e5-90bc-e014ce74f20c & ID 526099c4-f9a4-4521-ade4-c9be46e93580
+*   Case 6, 20: ID 63a5f98a-4a6a-4974-8d9a-879792425850
+*   Case 7: ID eb160818-af8c-4401-b6f9-42d629c7da7b
+*   Case 13: ID d6d1f871-ac79-4700-bc37-bb1f551dfa06
+*   Case 18: ID 94cb4a69-0325-4bb3-859f-981b97c4fe7f",,
