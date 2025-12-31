@@ -2,6 +2,9 @@
 
 Agentic RAG System using LangChain, LangGraph, and Gemini API
 
+**Demo Video**  
+https://github.com/user-attachments/assets/80d326d8-dfc4-4166-a57a-99d90fe61871
+
 ## Requirements
 - **Python 3.11**
 - Google Gemini API Key
