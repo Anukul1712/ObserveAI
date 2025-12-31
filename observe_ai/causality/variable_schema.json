@@ -1,0 +1,282 @@
+[
+    {
+        "name": "emo_sadness_mean",
+        "display_name": "Sadness Mean",
+        "description": "Average intensity of sadness expressed by the customer throughout the call (scaled 0–1).",
+        "role": "customer_emotion",
+        "scale_min": 0.0009688027793475,
+        "scale_max": 0.1035650679208201
+    },
+    {
+        "name": "emo_sadness_median",
+        "display_name": "Sadness Median",
+        "description": "Median sadness intensity across customer utterances (scaled 0–1).",
+        "role": "customer_emotion",
+        "scale_min": 0.0007524627144448,
+        "scale_max": 0.0222901571542024
+    },
+    {
+        "name": "emo_sadness_var",
+        "display_name": "Sadness Variance",
+        "description": "Variance in sadness intensity across the call.",
+        "role": "emotion_variability",
+        "scale_min": 1.684116332120831e-07,
+        "scale_max": 0.0384216639179043
+    },
+    {
+        "name": "emo_sadness_max",
+        "display_name": "Sadness Max",
+        "description": "Maximum sadness intensity reached during the call (scaled 0–1).",
+        "role": "customer_emotion",
+        "scale_min": 0.0021405892912298,
+        "scale_max": 0.9041438698768616
+    },
+    {
+        "name": "emo_approval_mean",
+        "display_name": "Approval Mean",
+        "description": "Average approval or agreement expressed by the customer (scaled 0–1).",
+        "role": "positive_emotion",
+        "scale_min": 0.0241880311694895,
+        "scale_max": 0.4059447453103282
+    },
+    {
+        "name": "emo_approval_median",
+        "display_name": "Approval Median",
+        "description": "Median approval intensity during the call (scaled 0–1).",
+        "role": "positive_emotion",
+        "scale_min": 0.0176873328164219,
+        "scale_max": 0.4820176362991333
+    },
+    {
+        "name": "emo_approval_var",
+        "display_name": "Approval Variance",
+        "description": "Variability in approval intensity expressed across the call.",
+        "role": "emotion_variability",
+        "scale_min": 0.0002531501535036,
+        "scale_max": 0.1057893946485682
+    },
+    {
+        "name": "emo_approval_max",
+        "display_name": "Approval Max",
+        "description": "Maximum approval intensity detected during the call (scaled 0–1).",
+        "role": "positive_emotion",
+        "scale_min": 0.0682885348796844,
+        "scale_max": 0.9317114353179932
+    },
+    {
+        "name": "emo_anger_mean",
+        "display_name": "Anger Mean",
+        "description": "Average intensity of anger expressed by the customer (scaled 0–1).",
+        "role": "customer_emotion",
+        "scale_min": 0.0008982101895857,
+        "scale_max": 0.0624992636451497
+    },
+    {
+        "name": "emo_anger_median",
+        "display_name": "Anger Median",
+        "description": "Median anger intensity across customer utterances (scaled 0–1).",
+        "role": "customer_emotion",
+        "scale_min": 0.0006719278753735,
+        "scale_max": 0.0056419083848595
+    },
+    {
+        "name": "emo_anger_var",
+        "display_name": "Anger Variance",
+        "description": "Variance in anger intensity throughout the conversation.",
+        "role": "emotion_variability",
+        "scale_min": 1.4371432172337406e-07,
+        "scale_max": 0.0251129571093438
+    },
+    {
+        "name": "emo_anger_max",
+        "display_name": "Anger Max",
+        "description": "Maximum anger intensity reached at any point in the call (scaled 0–1).",
+        "role": "customer_emotion",
+        "scale_min": 0.0020829706918448,
+        "scale_max": 0.8456876873970032
+    },
+    {
+        "name": "emo_annoyance_mean",
+        "display_name": "Annoyance Mean",
+        "description": "Average annoyance intensity expressed by the customer (scaled 0–1).",
+        "role": "customer_emotion",
+        "scale_min": 0.0034475296420315,
+        "scale_max": 0.194470061463877
+    },
+    {
+        "name": "emo_annoyance_median",
+        "display_name": "Annoyance Median",
+        "description": "Median annoyance intensity across customer utterances (scaled 0–1).",
+        "role": "customer_emotion",
+        "scale_min": 0.0029810327105224,
+        "scale_max": 0.0514869019389152
+    },
+    {
+        "name": "emo_annoyance_var",
+        "display_name": "Annoyance Variance",
+        "description": "Variance in annoyance intensity over the call.",
+        "role": "emotion_variability",
+        "scale_min": 1.5927308779829331e-06,
+        "scale_max": 0.06036860114336014
+    },
+    {
+        "name": "emo_annoyance_max",
+        "display_name": "Annoyance Max",
+        "description": "Maximum annoyance level expressed by the customer (scaled 0–1).",
+        "role": "customer_emotion",
+        "scale_min": 0.0138665755018592,
+        "scale_max": 0.9778382182121277
+    },
+    {
+        "name": "emo_confusion_mean",
+        "display_name": "Confusion Mean",
+        "description": "Average confusion expressed by the customer throughout the call (scaled 0–1).",
+        "role": "customer_emotion",
+        "scale_min": 0.0068828631415963,
+        "scale_max": 0.3988914489746094
+    },
+    {
+        "name": "emo_confusion_median",
+        "display_name": "Confusion Median",
+        "description": "Median confusion level in the conversation (scaled 0–1).",
+        "role": "customer_emotion",
+        "scale_min": 0.0040997629542611,
+        "scale_max": 0.21693095564842224
+    },
+    {
+        "name": "emo_confusion_var",
+        "display_name": "Confusion Variance",
+        "description": "Variance in confusion intensity across the call.",
+        "role": "emotion_variability",
+        "scale_min": 3.1769512550058e-06,
+        "scale_max": 0.11961997205018997
+    },
+    {
+        "name": "emo_confusion_max",
+        "display_name": "Confusion Max",
+        "description": "Maximum confusion intensity recorded (scaled 0–1).",
+        "role": "customer_emotion",
+        "scale_min": 0.0158383789956569,
+        "scale_max": 0.9866374731063843
+    },
+    {
+        "name": "emo_gratitude_mean",
+        "display_name": "Gratitude Mean",
+        "description": "Average gratitude expressed by the customer during the call.",
+        "role": "positive_emotion",
+        "scale_min": 0.0037313771657257,
+        "scale_max": 0.4355996705495412
+    },
+    {
+        "name": "emo_gratitude_median",
+        "display_name": "Gratitude Median",
+        "description": "Median gratitude intensity across utterances (scaled 0–1).",
+        "role": "positive_emotion",
+        "scale_min": 0.000740805582609,
+        "scale_max": 0.0699789486825466
+    },
+    {
+        "name": "emo_gratitude_var",
+        "display_name": "Gratitude Variance",
+        "description": "Variance in gratitude intensity shown during the call.",
+        "role": "emotion_variability",
+        "scale_min": 1.3965116360838283e-05,
+        "scale_max": 0.2187696227174913
+    },
+    {
+        "name": "emo_gratitude_max",
+        "display_name": "Gratitude Max",
+        "description": "Maximum gratitude intensity observed during the call.",
+        "role": "positive_emotion",
+        "scale_min": 0.0142819331958889,
+        "scale_max": 0.9942025542259216
+    },
+    {
+        "name": "num_agent_turns",
+        "display_name": "Number of Agent Turns",
+        "description": "How many times the agent spoke during the call.",
+        "role": "conversation_structure",
+        "scale_min": 0.0,
+        "scale_max": 40.0
+    },
+    {
+        "name": "num_customer_turns",
+        "display_name": "Number of Customer Turns",
+        "description": "How many times the customer spoke during the call.",
+        "role": "conversation_structure",
+        "scale_min": 0.0,
+        "scale_max": 39.0
+    },
+    {
+        "name": "total_words_agent",
+        "display_name": "Total Agent Words",
+        "description": "Total number of words spoken by the agent in the conversation.",
+        "role": "conversation_volume",
+        "scale_min": 0.0,
+        "scale_max": 573.0
+    },
+    {
+        "name": "total_words_customer",
+        "display_name": "Total Customer Words",
+        "description": "Total number of words spoken by the customer in the conversation.",
+        "role": "conversation_volume",
+        "scale_min": 0.0,
+        "scale_max": 461.0
+    },
+    {
+        "name": "avg_agent_utt_len",
+        "display_name": "Average Agent Utterance Length",
+        "description": "Average number of words in each agent utterance.",
+        "role": "conversation_style",
+        "scale_min": 0.0,
+        "scale_max": 30.157894736842103
+    },
+    {
+        "name": "avg_customer_utt_len",
+        "display_name": "Average Customer Utterance Length",
+        "description": "Average number of words in each customer utterance.",
+        "role": "conversation_style",
+        "scale_min": 0.0,
+        "scale_max": 23.285714285714285
+    },
+    {
+        "name": "disfluency_count",
+        "display_name": "Disfluency Count",
+        "description": "Number of speech disfluencies (um, uh, hesitations, repeated words).",
+        "role": "speech_fluency",
+        "scale_min": 15.0,
+        "scale_max": 163.0
+    },
+    {
+        "name": "question_count",
+        "display_name": "Question Count",
+        "description": "Total number of questions asked during the call.",
+        "role": "conversation_structure",
+        "scale_min": 14.0,
+        "scale_max": 72.0
+    },
+    {
+        "name": "sentiment_start",
+        "display_name": "Sentiment Start",
+        "description": "Sentiment score at the beginning of the call (negative to positive).",
+        "role": "sentiment",
+        "scale_min": 1.0,
+        "scale_max": 5.0
+    },
+    {
+        "name": "sentiment_end",
+        "display_name": "Sentiment End",
+        "description": "Sentiment score at the end of the call.",
+        "role": "sentiment",
+        "scale_min": 1.0,
+        "scale_max": 5.0
+    },
+    {
+        "name": "sentiment_change",
+        "display_name": "Sentiment Change",
+        "description": "Change in sentiment from start to end (end − start).",
+        "role": "sentiment_dynamics",
+        "scale_min": -4.0,
+        "scale_max": 4.0
+    }
+]
