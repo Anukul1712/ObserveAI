@@ -1,0 +1,42 @@
+[
+    {
+        "transcript_id": "1c99b47c-4e80-49d5-b3c6-52b0c3230fa8",
+        "query_type": "counterfactual",
+        "interventions": {
+            "emo_sadness_mean": 0.0106707176353127,
+            "emo_anger_mean": 0.0008982101895857
+        },
+        "targets": [
+            {
+                "variable": "emo_sadness_mean",
+                "before": 0.0074557897293873,
+                "after": 0.0106707176353127,
+                "delta": 0.0032149279059254
+            },
+            {
+                "variable": "emo_sadness_median",
+                "before": 0.001998774067033,
+                "after": 0.0015384224243462086,
+                "delta": -0.0004603516426867913
+            },
+            {
+                "variable": "emo_anger_mean",
+                "before": 0.0103603989534479,
+                "after": 0.0008982101895857,
+                "delta": -0.0094621887638622
+            },
+            {
+                "variable": "emo_anger_median",
+                "before": 0.002453428460285,
+                "after": 0.0013013831339776516,
+                "delta": -0.0011520453263073483
+            },
+            {
+                "variable": "num_customer_turns",
+                "before": 14.0,
+                "after": 17.003299713134766,
+                "delta": 3.0032997131347656
+            }
+        ]
+    }
+]
