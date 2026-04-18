@@ -4,7 +4,7 @@ Agentic RAG System using LangChain, LangGraph, and Gemini API
 
 <div align="center">
   
-<h2>Demo Video</h2>
+<h3>Demo Video</h3>
 
 https://github.com/user-attachments/assets/80d326d8-dfc4-4166-a57a-99d90fe61871
 
